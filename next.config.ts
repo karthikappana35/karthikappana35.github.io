@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
-// Only set basePath/assetPrefix when deploying to GitHub Pages
-const isGithubPages = process.env.GITHUB_PAGES === 'true';
+// Only set basePath/assetPrefix for project pages (served under /repo-name/)
+// For user/organization pages (served at root), leave these unset.
+const isProjectPages = process.env.PROJECT_PAGES === 'true';
 
 const nextConfig: NextConfig = {
   output: 'export',
@@ -9,8 +10,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  ...(isGithubPages
+  ...(isProjectPages
     ? {
+        // Replace with your repo name when using project pages
         basePath: '/karthik-portfolio',
         assetPrefix: '/karthik-portfolio/',
       }
