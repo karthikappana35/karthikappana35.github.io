@@ -9,21 +9,21 @@ export default function Home() {
   const projects = [
     {
       title: "F1Tenth Maze Solver",
-      description: "Autonomous racing car that navigates complex mazes using ROS2, computer vision, and path planning algorithms.",
-      technologies: ["ROS2", "Python", "OpenCV", "C++", "Gazebo"],
+      description: "Developed an autonomous stack in ROS2 for a F1Tenth car to traverse tight mazes using complex maneuvers. Integrated Hybrid-A* with Reeds-Shepp heuristics and bidirectional control for smooth trajectories.",
+      technologies: ["ROS2", "C++", "Python", "OpenCV", "LiDAR", "SLAM"],
       githubUrl: "https://github.com/karthikappana/f1tenth-maze-solver",
       index: 0
     },
     {
-      title: "Hand Gesture Mouse Control",
-      description: "Raspberry Pi-based system that controls computer mouse using hand gestures detected through computer vision.",
-      technologies: ["Python", "OpenCV", "Raspberry Pi", "MediaPipe", "PyAutoGUI"],
+      title: "Hand Gesture Mouse Control using Raspberry Pi",
+      description: "Built a real-time hand detection system using TensorFlow, OpenCV, and Raspberry Pi to control the mouse via gestures. Quantized a custom model and deployed it with Coral TPU for sub-10ms latency.",
+      technologies: ["TensorFlow", "OpenCV", "Python", "Raspberry Pi", "Coral TPU", "USB HID"],
       githubUrl: "https://github.com/karthikappana/gesture-mouse",
       index: 1
     },
     {
       title: "Custom RISC-V Unix OS",
-      description: "A minimal Unix-like operating system built from scratch for RISC-V architecture with memory management and process scheduling.",
+      description: "Developed a Unix-style operating system from scratch in C for RISC-V with virtual memory, process management, file system, and syscalls. Implemented ELF loader, pipes, and page table management.",
       technologies: ["C", "Assembly", "RISC-V", "QEMU", "GDB"],
       githubUrl: "https://github.com/karthikappana/riscv-os",
       index: 2
@@ -33,55 +33,67 @@ export default function Home() {
   const experiences = [
     {
       company: "John Deere ISG",
-      position: "Robotics Engineer Intern",
-      duration: "Summer 2024",
-      description: "Developed autonomous navigation systems for agricultural machinery using ROS2 and computer vision.",
+      position: "Robotics Engineer Intern – Automation & Autonomy",
+      duration: "Aug 2025 – Present",
+      description: "Migrated depth perception from laser sensing to monocular point cloud estimation, reducing hardware cost. Developed an image segmentation model to classify furrow debris, improving depth pipeline robustness.",
       achievements: [
-        "Implemented SLAM algorithms for field mapping",
-        "Optimized path planning for autonomous tractors",
-        "Reduced navigation errors by 30% through sensor fusion"
+        "Implemented Python automation scripts in Unreal Engine SIL simulations for CVML model validation.",
+        "Reduced perception cost by transitioning from LiDAR-based to monocular estimation.",
+        "Enhanced model robustness through synthetic dataset augmentation."
       ],
-      technologies: ["ROS2", "Python", "C++", "OpenCV", "Gazebo"],
+      technologies: ["Python", "CVML", "Unreal Engine", "ROS2", "OpenCV"],
       index: 0
     },
     {
       company: "John Deere ISG",
-      position: "Embedded Systems Intern",
-      duration: "Summer 2023",
-      description: "Worked on embedded systems for precision agriculture equipment and sensor integration.",
+      position: "Embedded Systems Intern – Dynamic System Modeling",
+      duration: "May 2025 – Aug 2025",
+      description: "Designed and validated a skid steer plant model for Machine-in-the-Loop simulation using MATLAB, Simulink, and C++ for automation testing.",
       achievements: [
-        "Developed CAN bus communication protocols",
-        "Implemented real-time sensor data processing",
-        "Created automated testing frameworks for embedded systems"
+        "Developed CI/CD metrics to detect oscillatory behavior in guidance systems, improving reliability.",
+        "Integrated improved 2D tire model based on manufacturer specs, enhancing simulation fidelity."
       ],
-      technologies: ["C", "Embedded C", "CAN Bus", "MATLAB", "Arduino"],
+      technologies: ["MATLAB", "Simulink", "C++", "Python", "Automation"],
       index: 1
     },
     {
-      company: "Morehouse Engineering",
-      position: "Software Development Intern",
-      duration: "Summer 2022",
-      description: "Contributed to engineering software solutions and automation tools for manufacturing processes.",
+      company: "Morehouse Engineering Inc.",
+      position: "Systems Engineer Intern",
+      duration: "May 2024 – Aug 2024",
+      description: "Installed industrial wireless IO modules and debugged ControlLogix PLCs for water reclamation facilities. Analyzed filtration performance and designed AutoCAD Electrical schematics.",
       achievements: [
-        "Built data visualization dashboards",
-        "Automated quality control processes",
-        "Improved system efficiency by 25%"
+        "Configured wireless IO to transmit analog sensor data.",
+        "Improved system diagnostics through PLC reimaging and field testing.",
+        "Developed process schematics to optimize control workflows."
       ],
-      technologies: ["Python", "JavaScript", "SQL", "React", "Docker"],
+      technologies: ["Allen Bradley PLC", "AutoCAD Electrical", "Wireless IO", "Instrumentation"],
       index: 2
     },
     {
-      company: "FIRST Robotics",
-      position: "Mentor & Team Lead",
-      duration: "2021 - Present",
-      description: "Mentoring high school students in robotics, programming, and engineering principles.",
+      company: "FIRST Robotics Team 293 SPIKE",
+      position: "Volunteer Mentor",
+      duration: "Oct 2023 – Present",
+      description: "Mentored students in integrating IMU, encoder, and vision-based odometry using AprilTags and OpenCV, achieving sub-6 inch localization accuracy.",
       achievements: [
-        "Led team to regional championships",
-        "Developed curriculum for robotics education",
-        "Mentored 50+ students in STEM fields"
+        "Implemented custom kinematic models with sensor fusion for high-precision navigation.",
+        "Guided Agile-based design and fabrication workflows, reducing build time by 10%.",
+        "Supported SPI, I2C, and CAN sensor integration into robot control systems."
       ],
-      technologies: ["Java", "LabVIEW", "CAD", "3D Printing", "Electronics"],
+      technologies: ["Python", "C++", "OpenCV", "AprilTags", "Embedded Systems"],
       index: 3
+    },
+    {
+      company: "Illini Motorsports FSAE",
+      position: "Software Team Member",
+      duration: "Aug 2023 – May 2025",
+      description: "Migrated a MATLAB-based lap time simulator to Python for cross-platform use. Developed CAN parsing and STM32 IMU interface software.",
+      achievements: [
+        "Improved telemetry analysis by integrating CAN parsing tools.",
+        "Supported simulation-to-hardware correlation for testing.",
+        "Enabled IMU communication through STM32 microcontroller drivers."
+      ],
+      technologies: ["Python", "C", "STM32", "CAN Bus", "MATLAB"],
+      index: 4
     }
   ]
 
@@ -89,7 +101,6 @@ export default function Home() {
     <div className="min-h-screen bg-amber-50">
       <Navbar />
      
-
       {/* About Section */}
       <section id="about" className="py-20 px-6 bg-amber-50">
         <div className="max-w-6xl mx-auto">
@@ -97,15 +108,10 @@ export default function Home() {
             <div className="order-2 md:order-1">
               <h2 className="text-4xl font-bold text-black mb-8">About Me</h2>
               <p className="text-lg text-black mb-6">
-                I&apos;m a Computer Engineering student at the University of Illinois at Urbana-Champaign, 
-                passionate about robotics, computer vision, and embedded systems. My journey in engineering 
-                began with FIRST Robotics in high school and has evolved into a deep fascination with 
-                autonomous systems and intelligent machines.
+                I&apos;m a Computer Engineering student at the University of Illinois Urbana-Champaign, passionate about robotics, computer vision, and embedded systems. My journey began in FIRST Robotics and evolved into a focus on autonomous systems and intelligent machines.
               </p>
               <p className="text-lg text-black mb-8">
-                I believe in the power of technology to solve real-world problems, from precision agriculture 
-                to autonomous navigation. My experience spans from embedded systems development to computer 
-                vision algorithms, always with a focus on practical applications.
+                I’ve interned at John Deere ISG and Morehouse Engineering, where I worked on dynamic system modeling, embedded software, and robotic autonomy. My work spans simulation, control systems, and CVML applications for real-world automation.
               </p>
             </div>
             
@@ -125,7 +131,7 @@ export default function Home() {
                 <div>
                   <h3 className="text-xl font-semibold text-black mb-4">Skills</h3>
                   <p className="text-black text-sm">
-                    C++, Python, ROS2, OpenCV, MATLAB, TensorFlow, Embedded Systems, Computer Vision
+                    C++, Python, MATLAB, ROS2, TensorFlow, OpenCV, Embedded Systems, Simulink, CVML, Control Systems
                   </p>
                 </div>
                 
@@ -136,7 +142,7 @@ export default function Home() {
                       <span className="text-black text-sm">Urbana-Champaign, IL</span>
                     </div>
                     <div>
-                      <span className="text-black text-sm">Expected Graduation: May 2025</span>
+                      <span className="text-black text-sm">Expected Graduation: Dec 2026</span>
                     </div>
                     <div>
                       <span className="text-black text-sm">karthik.appana@gmail.com</span>
@@ -153,8 +159,6 @@ export default function Home() {
       <section id="experience" className="py-20 px-6 bg-amber-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-black mb-4 text-center">Experience</h2>
-          
-          
           <SimpleTimeline items={experiences} />
         </div>
       </section>
@@ -164,13 +168,11 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-black mb-4 text-center">Featured Projects</h2>
           <p className="text-lg text-black mb-12 text-center max-w-2xl mx-auto">
-            Exploring the intersection of robotics, computer vision, and embedded systems
+            Exploring the intersection of robotics, control systems, and computer vision
           </p>
-          
           <ProjectCards projects={projects} />
         </div>
       </section>
-
     </div>
   )
 }
