@@ -108,10 +108,10 @@ export default function Home() {
             <div className="order-2 md:order-1">
               <h2 className="text-4xl font-bold text-black mb-8">About Me</h2>
               <p className="text-lg text-black mb-6">
-                 I'm a Computer Engineering student at the University of Illinois Urbana-Champaign, passionate about robotics, computer vision, and embedded systems. My journey began in FIRST Robotics and evolved into a focus on autonomous systems and intelligent machines.
+                 I&apos;m a Computer Engineering student at the University of Illinois Urbana-Champaign, passionate about robotics, computer vision, and embedded systems. My journey began in FIRST Robotics and evolved into a focus on autonomous systems and intelligent machines.
                  </p>
               <p className="text-lg text-black mb-8">
-                I've interned at John Deere ISG and Morehouse Engineering, where I worked on dynamic system modeling, embedded software, and robotic autonomy. My work spans simulation, control systems, and CVML applications for real-world automation.
+                I&apos;ve interned at John Deere ISG and Morehouse Engineering, where I worked on dynamic system modeling, embedded software, and robotic autonomy. My work spans simulation, control systems, and CVML applications for real-world automation.
               </p>
             </div>
             
