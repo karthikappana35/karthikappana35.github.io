@@ -13,8 +13,8 @@ const nextConfig: NextConfig = {
   ...(isProjectPages
     ? {
         // Replace with your repo name when using project pages
-        basePath: '/karthik-portfolio',
-        assetPrefix: '/karthik-portfolio/',
+        basePath: '/karthikappana35.github.io',
+        assetPrefix: '/karthikappana35.github.io/',
       }
     : {}),
 };

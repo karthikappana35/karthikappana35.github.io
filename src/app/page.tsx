@@ -18,14 +18,14 @@ export default function Home() {
       title: "Hand Gesture Mouse Control using Raspberry Pi",
       description: "Built a real-time hand detection system using TensorFlow, OpenCV, and Raspberry Pi to control the mouse via gestures. Quantized a custom model and deployed it with Coral TPU for sub-10ms latency.",
       technologies: ["TensorFlow", "OpenCV", "Python", "Raspberry Pi", "Coral TPU", "USB HID"],
-      githubUrl: "https://github.com/karthikappana/gesture-mouse",
+      githubUrl: "https://github.com/karthikappana35/RPI-HandTracking",
       index: 1
     },
     {
       title: "Custom RISC-V Unix OS",
       description: "Developed a Unix-style operating system from scratch in C for RISC-V with virtual memory, process management, file system, and syscalls. Implemented ELF loader, pipes, and page table management.",
       technologies: ["C", "Assembly", "RISC-V", "QEMU", "GDB"],
-      githubUrl: "https://github.com/karthikappana/riscv-os",
+      githubUrl: "https://github.com/karthikappana35/RISC-V_Unix",
       index: 2
     }
   ]
@@ -108,10 +108,10 @@ export default function Home() {
             <div className="order-2 md:order-1">
               <h2 className="text-4xl font-bold text-black mb-8">About Me</h2>
               <p className="text-lg text-black mb-6">
-                I&apos;m a Computer Engineering student at the University of Illinois Urbana-Champaign, passionate about robotics, computer vision, and embedded systems. My journey began in FIRST Robotics and evolved into a focus on autonomous systems and intelligent machines.
-              </p>
+                 I'm a Computer Engineering student at the University of Illinois Urbana-Champaign, passionate about robotics, computer vision, and embedded systems. My journey began in FIRST Robotics and evolved into a focus on autonomous systems and intelligent machines.
+                 </p>
               <p className="text-lg text-black mb-8">
-                I’ve interned at John Deere ISG and Morehouse Engineering, where I worked on dynamic system modeling, embedded software, and robotic autonomy. My work spans simulation, control systems, and CVML applications for real-world automation.
+                I've interned at John Deere ISG and Morehouse Engineering, where I worked on dynamic system modeling, embedded software, and robotic autonomy. My work spans simulation, control systems, and CVML applications for real-world automation.
               </p>
             </div>
             
